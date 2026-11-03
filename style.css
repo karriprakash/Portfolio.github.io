@@ -81,3 +81,20 @@ h3{font-size:1.12rem;margin:0 0 8px;letter-spacing:-.01em}
 .hero{display:flex;flex-direction:column-reverse;gap:28px}
 .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 8%;background:var(--bg2);border:3px solid var(--card);box-shadow:0 0 0 1px var(--line),var(--shadow);flex:none}
 @media (min-width:720px){.hero{flex-direction:row;align-items:center;justify-content:space-between;gap:48px}.avatar{width:220px;height:220px}}
+
+/* Open roles */
+.idea-box{display:flex;flex-direction:column;gap:16px;margin-bottom:20px;border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+@media (min-width:720px){.idea-box{flex-direction:row;align-items:center;justify-content:space-between}.idea-box .btn{flex:none}}
+.role{display:flex;flex-direction:column;scroll-margin-top:80px}
+.role:target,.role.is-open{border-color:var(--accent)}
+.role ul.tasks{margin:0 0 14px;padding-left:1.1em;color:var(--muted)}
+.role ul.tasks li{margin:2px 0}
+.role-actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px}
+.btn.small{padding:7px 12px;font-size:.88rem}
+.btn[aria-expanded="true"]{border-color:var(--accent);color:var(--accent)}
+.comments{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.comments[hidden]{display:none}
+.comments .fallback{color:var(--muted);margin:0}
+.note{color:var(--muted);font-size:.88rem;margin:18px 0 0}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30;max-width:calc(100% - 32px)}
+.toast.show{opacity:1}
