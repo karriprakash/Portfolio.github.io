@@ -1,0 +1,45 @@
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your idea. No money is asked for and none is paid.
+        **This page is public.** Please don't write your phone number, email, address or ID numbers here.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does your idea solve?
+      description: Who has this problem, and where?
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How would it work?
+      description: One or two sentences is enough.
+    validations:
+      required: true
+  - type: textarea
+    id: women
+    attributes:
+      label: How could it help women in your place?
+    validations:
+      required: false
+  - type: input
+    id: exists
+    attributes:
+      label: Does something like this already exist?
+      description: If yes, name it. We'll work on making it better.
+    validations:
+      required: false
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which language would you like us to reply in?
+      options:
+        - English
+        - Telugu
+        - Either
+    validations:
+      required: true
